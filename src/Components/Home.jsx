@@ -2,111 +2,90 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 selection:bg-purple-500/30 selection:text-purple-200">
-      
-      {/* 1. MODERN GLASSMORPHIC NAVBAR */}
-      <nav className="sticky top-0 z-50 backdrop-blur-md bg-slate-950/70 border-b border-slate-900 px-6 md:px-12 py-4 flex justify-between items-center">
-        {/* Logo/Name with subtle gradient */}
-        <h2 className="text-xl font-black tracking-wider bg-gradient-to-r from-indigo-400 to-purple-400 text-transparent bg-clip-text hover:opacity-80 transition cursor-pointer">
+    <div className="min-h-screen overflow-hidden text-white selection:bg-orange-400/30 selection:text-white bg-gradient-to-br from-[#0b0b0b] via-[#1a120d] to-[#120a05]">
+
+      {/* ORANGE GLOW BACKGROUNDS */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#fb923c_0%,transparent_40%),radial-gradient(circle_at_bottom_right,#f97316_0%,transparent_40%),radial-gradient(circle_at_center,#ea580c_0%,transparent_55%)] opacity-25"></div>
+
+      {/* GRID */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#2a1a10_1px,transparent_1px),linear-gradient(to_bottom,#2a1a10_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-10"></div>
+
+      {/* NAVBAR */}
+      <nav className="sticky top-0 z-50 backdrop-blur-xl bg-black/40 border-b border-orange-500/10 px-6 md:px-12 py-4 flex justify-between items-center">
+
+        <h2 className="text-2xl font-black tracking-[0.2em] bg-gradient-to-r from-orange-400 via-amber-300 to-yellow-400 bg-clip-text text-transparent cursor-pointer">
           STUDENT
         </h2>
 
-        {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
-          <li>
-            <a href="#about" className="hover:text-slate-100 transition-colors duration-200 flex items-center gap-1">
-              <span className="text-indigo-400 font-mono text-xs">01.</span> About
-            </a>
-          </li>
-          <li>
-            <a href="#education" className="hover:text-slate-100 transition-colors duration-200 flex items-center gap-1">
-              <span className="text-indigo-400 font-mono text-xs">02.</span> Education
-            </a>
-          </li>
-          <li>
-            <a href="#skills" className="hover:text-slate-100 transition-colors duration-200 flex items-center gap-1">
-              <span className="text-indigo-400 font-mono text-xs">03.</span> Skills
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="hover:text-slate-100 transition-colors duration-200 flex items-center gap-1">
-              <span className="text-indigo-400 font-mono text-xs">05.</span> Contact
-            </a>
-          </li>
-        </ul>
-
-        {/* Action Button */}
-        <div className="hidden md:block">
-          <a 
-            href="#contact" 
-            className="px-4 py-2 text-xs font-mono font-medium text-indigo-400 border border-indigo-500/30 rounded hover:bg-indigo-500/10 transition-all duration-300"
-          >
-            Resume
-          </a>
-        </div>
+        <a
+          href="#contact"
+          className="hidden md:block px-5 py-2 rounded-xl bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400 text-black font-semibold hover:scale-105 transition shadow-lg shadow-orange-500/20"
+        >
+          Resume
+        </a>
       </nav>
 
-     
-      <header className="relative min-h-[calc(100vh-72px)] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
-        
-        
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
-        <div className="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+      {/* HERO */}
+      <header className="relative min-h-[calc(100vh-72px)] flex items-center justify-center px-6 text-center overflow-hidden">
 
-        {/* Subtle Grid overlay for a developer feel */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30"></div>
+        {/* ORANGE GLOWS */}
+        <div className="absolute top-20 left-20 w-[320px] h-[320px] bg-orange-500/20 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-10 right-10 w-[320px] h-[320px] bg-amber-500/20 rounded-full blur-[120px]"></div>
 
         <div className="relative z-10 flex flex-col items-center max-w-3xl">
-          
-          {/* Profile Image with Cyber Border Wrap */}
-          <div className="relative p-1.5 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl shadow-purple-500/20 group animate-fadeIn">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 blur-md opacity-70 group-hover:opacity-100 transition duration-500"></div>
-            <img
-              src="https://mooddp.com/wp-content/uploads/2025/11/pretty-girl-dp.jpg"
-              alt="Aswathy B Nair Profile"
-              className="relative w-36 h-36 md:w-40 md:h-40 rounded-full object-cover border-4 border-slate-950"
-            />
+
+          {/* PROFILE */}
+          <div className="relative group">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-orange-500 via-amber-400 to-yellow-300 blur-2xl opacity-70 group-hover:opacity-100 transition"></div>
+
+            <div className="relative p-1 rounded-full bg-gradient-to-tr from-orange-400 via-amber-500 to-yellow-400">
+              <img
+                src="https://mooddp.com/wp-content/uploads/2025/11/pretty-girl-dp.jpg"
+                alt="Profile"
+                className="w-40 h-40 rounded-full object-cover border-4 border-black"
+              />
+            </div>
           </div>
 
-          {/* Subheader / Tagline */}
-          <span className="mt-8 px-3 py-1 text-xs font-mono tracking-widest text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 rounded-full uppercase">
-            Hi, my name is
+          {/* INTRO */}
+          <span className="mt-8 px-4 py-1 text-xs uppercase tracking-[0.3em] font-mono text-orange-200 border border-orange-400/20 rounded-full bg-orange-500/10">
+            Hi,MY NAME IS
           </span>
 
-          {/* Main Title */}
-          <h1 className="text-4xl sm:text-6xl font-black mt-3 tracking-tight text-white">
+          {/* NAME */}
+          <h1 className="mt-6 text-5xl md:text-7xl font-black leading-tight bg-gradient-to-r from-orange-300 via-white to-amber-300 bg-clip-text text-transparent">
             ASWATHY B NAIR
           </h1>
-          {/* Context/Bio snippet */}
-          <p className="mt-4 text-base sm:text-lg text-slate-400 max-w-xl leading-relaxed">
-            I'm a computer science <span className="text-purple-400 font-medium">Student</span> & aspiring developer focused on engineering elegant, clean, and highly performant web applications.
+
+          {/* TEXT */}
+          <p className="mt-6 text-slate-300 text-lg max-w-2xl">
+            I’m a{" "}
+            <span className="text-orange-300 font-semibold">
+              Computer Science Student
+            </span>{" "}
+            passionate about building modern, responsive web applications with beautiful UI/UX.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            
-              
-            
-            <a 
-              href="#contact" 
-              className="px-8 py-3 text-sm font-semibold text-slate-300 border border-slate-800 rounded-lg hover:bg-slate-900/60 hover:text-white hover:border-slate-700 transition duration-300"
+          {/* BUTTONS */}
+          <div className="mt-10 flex flex-col sm:flex-row gap-5">
+
+            <a
+              href="#projects"
+              className="px-8 py-3 rounded-xl bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400 text-black font-semibold hover:scale-105 transition shadow-lg shadow-orange-500/30"
             >
-              Get In Touch
+              Explore Projects
             </a>
+
+            <a
+              href="#contact"
+              className="px-8 py-3 rounded-xl border border-orange-500/30 text-orange-200 hover:bg-orange-500/10 hover:border-orange-400 transition"
+            >
+              Contact Me
+            </a>
+
           </div>
-
         </div>
-
-        {/* Decorative Scroll Down Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-xs font-mono text-slate-600">
-          <span>Scroll down</span>
-          <div className="w-1 h-4 bg-slate-800 rounded-full relative overflow-hidden">
-            <div className="absolute inset-0 bg-indigo-400 h-1/2 w-full animate-bounce"></div>
-          </div>
-        </div>
-
       </header>
-
     </div>
   );
 }

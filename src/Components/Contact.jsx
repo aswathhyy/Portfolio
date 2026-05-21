@@ -6,27 +6,24 @@ function Contact() {
       id="contact"
       className="relative min-h-screen overflow-hidden px-6 py-24
       flex items-center justify-center
-      bg-gradient-to-br
-      from-[#020617]
-      via-[#0b1120]
-      to-black"
+      bg-gradient-to-br from-[#1a0f08] via-[#2a140a] to-black"
     >
       {/* ================= BACKGROUND EFFECTS ================= */}
 
-      {/* Blue Glow */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px]"></div>
+      {/* Orange Glow */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-orange-500/25 rounded-full blur-[120px]"></div>
 
-      {/* Indigo Glow */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-indigo-500/20 rounded-full blur-[120px]"></div>
+      {/* Amber Glow */}
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-amber-500/20 rounded-full blur-[120px]"></div>
 
-      {/* Cyan Center Glow */}
-      <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-cyan-400/10 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2"></div>
+      {/* Center Glow */}
+      <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-orange-300/10 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2"></div>
 
       {/* Grid Overlay */}
       <div
-        className="absolute inset-0 opacity-[0.05]
-        bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),
-        linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)]
+        className="absolute inset-0 opacity-[0.06]
+        bg-[linear-gradient(to_right,#ffffff12_1px,transparent_1px),
+        linear-gradient(to_bottom,#ffffff12_1px,transparent_1px)]
         bg-[size:60px_60px]"
       ></div>
 
@@ -34,13 +31,11 @@ function Contact() {
 
       <div className="relative z-10 max-w-4xl w-full text-center">
 
-        {/* Small Tag */}
+        {/* Tag */}
         <span
           className="px-5 py-2 rounded-full text-sm font-semibold tracking-widest uppercase
-          bg-white/5
-          border border-white/10
-          text-cyan-300
-          backdrop-blur-xl"
+          bg-white/5 border border-white/10
+          text-orange-300 backdrop-blur-xl"
         >
           Get In Touch
         </span>
@@ -48,7 +43,7 @@ function Contact() {
         {/* Heading */}
         <h1
           className="mt-8 text-5xl md:text-7xl font-black
-          bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500
+          bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-300
           text-transparent bg-clip-text"
         >
           Contact Me
@@ -65,20 +60,18 @@ function Contact() {
 
         <div
           className="relative mt-16 overflow-hidden rounded-[2rem] p-[1px]
-          bg-gradient-to-br from-cyan-500/30 via-blue-500/20 to-indigo-500/20"
+          bg-gradient-to-br from-orange-500/30 via-amber-500/20 to-yellow-500/20"
         >
-
           {/* Glass Card */}
           <div
             className="relative rounded-[2rem] p-10 md:p-14
-            bg-[#0f172a]/80
+            bg-[#1f120b]/80
             backdrop-blur-2xl
-            border border-white/10
-            shadow-[0_0_50px_rgba(37,99,235,0.15)]"
+            border border-orange-500/10
+            shadow-[0_0_50px_rgba(249,115,22,0.15)]"
           >
-
             {/* Card Glow */}
-            <div className="absolute top-0 right-0 w-52 h-52 bg-cyan-500/10 rounded-full blur-3xl"></div>
+            <div className="absolute top-0 right-0 w-52 h-52 bg-orange-500/10 rounded-full blur-3xl"></div>
 
             {/* Contact Items */}
             <div className="space-y-8">
@@ -88,16 +81,16 @@ function Contact() {
                 className="group flex flex-col md:flex-row items-center justify-between
                 gap-4 p-6 rounded-2xl
                 bg-white/5 border border-white/10
-                hover:border-cyan-400/30 hover:bg-cyan-500/5
+                hover:border-orange-400/30 hover:bg-orange-500/5
                 transition duration-500"
               >
                 <div className="flex items-center gap-4">
 
                   <div
                     className="w-14 h-14 rounded-2xl
-                    bg-gradient-to-r from-cyan-400 to-blue-500
+                    bg-gradient-to-r from-orange-400 to-amber-500
                     flex items-center justify-center
-                    text-2xl shadow-lg shadow-cyan-500/30"
+                    text-2xl shadow-lg shadow-orange-500/30"
                   >
                     📧
                   </div>
@@ -119,16 +112,16 @@ function Contact() {
                 className="group flex flex-col md:flex-row items-center justify-between
                 gap-4 p-6 rounded-2xl
                 bg-white/5 border border-white/10
-                hover:border-blue-400/30 hover:bg-blue-500/5
+                hover:border-amber-400/30 hover:bg-amber-500/5
                 transition duration-500"
               >
                 <div className="flex items-center gap-4">
 
                   <div
                     className="w-14 h-14 rounded-2xl
-                    bg-gradient-to-r from-blue-500 to-indigo-500
+                    bg-gradient-to-r from-amber-500 to-yellow-500
                     flex items-center justify-center
-                    text-2xl shadow-lg shadow-blue-500/30"
+                    text-2xl shadow-lg shadow-amber-500/30"
                   >
                     📞
                   </div>
@@ -150,16 +143,16 @@ function Contact() {
                 className="group flex flex-col md:flex-row items-center justify-between
                 gap-4 p-6 rounded-2xl
                 bg-white/5 border border-white/10
-                hover:border-indigo-400/30 hover:bg-indigo-500/5
+                hover:border-yellow-400/30 hover:bg-yellow-500/5
                 transition duration-500"
               >
                 <div className="flex items-center gap-4">
 
                   <div
                     className="w-14 h-14 rounded-2xl
-                    bg-gradient-to-r from-indigo-500 to-purple-500
+                    bg-gradient-to-r from-yellow-500 to-orange-500
                     flex items-center justify-center
-                    text-2xl shadow-lg shadow-indigo-500/30"
+                    text-2xl shadow-lg shadow-yellow-500/30"
                   >
                     📍
                   </div>
@@ -180,6 +173,7 @@ function Contact() {
 
           </div>
         </div>
+
       </div>
     </section>
   );
